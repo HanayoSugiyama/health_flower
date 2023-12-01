@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kaisei Opti', serif;
+    background-image:url(../images/lace.50.jpg) ;
+    background-repeat: repeat;
+}
+img{
+    max-width: 100%; /*親要素からはみ出なくする設定*/
+    height: auto;
+    vertical-align: bottom; /*下の余白を除去する*/
+    }
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 360px) {
+    body {
+        font-size:12px
+    }
+}
+
+/*--------------------
+  ヘッダー&パン部分
+--------------------*/
+header {
+    height: 90px;
+    background-color: #ff7f7f;
+    background-image: url(../images/simasima.jpg);
+    background-repeat: repeat-x;
+    background-blend-mode: soft-light;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+.flex {
+    display: flex;
+}
+.breadcrumb li:after{
+    content: '>';
+    padding: 0 6px;
+    color: #333333;
+}
+.breadcrumb li:last-child:after {
+    content: '';
+  }
+
+.bc__item {
+    font-size: 16px;
+    color: #333333;
+    margin: 10px;
+}
+a:hover {
+    opacity: 0.5;
+}
+
+/*--------------------
+  マインドナンバー計算
+--------------------*/
+
+#inymd {
+    display: block;
+    text-align: center;
+    margin-bottom: 32px;
+    margin-top: 32px
+}
+
+.postid-257 #inymd,.postid-237 #inymd {
+    text-align: left
+}
+
+dl.name-area {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px
+}
+
+dl.name-area dt,dl.name-area dd {
+    display: inline-block;
+    width: 27%;
+    text-align: left
+}
+
+dl.name-area .block-area {
+    display: block
+}
+
+dl.name-area dd {
+    margin: 0
+}
+
+#inymd select,#inymd input,#kabara1 input {
+    font-size: 20px;
+    vertical-align: top;
+    outline: none;
+    background: #fff;
+    color: #128282;
+    color: #7490a9;
+    border-color: #0084b4;
+    height: 47px;
+    margin-right: 12px;
+    border: 0;
+    outline: 1px solid #bbb;
+    outline-offset: -1px
+}
+
+#inymd input {
+    padding-left: 5px;
+    width: 8em
+}
+
+#inymd input::placeholder {
+    color: #c7e2e2
+}
+
+#inymd span {
+    font-size: 28px;
+    color: #128282;
+    color: #7490a9
+}
+
+.ads1 {
+    margin: 32px 0
+}
+
+#inymd .st-2 button {
+    font-size: 29px;
+    background: #ffa3a3;
+    border-radius: 3px;
+    padding: 0 85px;
+    color: #fff;
+    border-bottom: solid 4px #ff7f7f;
+    margin: 30px 0 90px;    
+}
+
+#inymd .st-2 button:hover {
+    background: #6fbbbc
+}
+
+#inymd .st-2 button:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0,0,0,.2);
+    border-bottom: none
+}
+
+input#d-no1,input#d-no2,input#d-no3 {
+    text-align: center
+}
+
+#main #kabara1 p.strng {
+    font-weight: 800;
+    text-decoration: underline
+}
+
+
+.result-area {
+    display: inline-block;
+    width: 30%;
+    margin-top: 20px;
+}
+
+#inymd select#years3 {
+    width: 7em
+}
+
+#inymd select#inmm3 {
+    width: 4em
+}
+
+#inymd select#indd3 {
+    width: 4em
+}
+
+#inymd input#inzoro1 {
+    width: 1em;
+    outline: none
+}
+
+#form3 input#soul-no1 {
+    text-align: center
+}
+
+#soulnumber1 dl.result-area dt {
+    vertical-align: top
+}
+
+#form3 input#soul-no1 {
+    width: 6em
+}
+
+.question p{
+    font-size: 24px;
+    margin: 30px auto;
+}
+
+/*-------------------------
+   マインドナンバーリスト
+--------------------------*/
+.push {
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    color: #ff7f7f;
+
+}
+
+.mind-number-galley {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    margin: 30px auto;
+}
+
+.mind-number-galley img {
+    object-fit: cover;
+}
+
+.number-img {
+    margin: 0  auto;
+}
+
+
+
+footer {
+    background-color: #ff9999;
+    padding: 10px 50px;
+    text-align: center;
+
+}
+.copyright {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}

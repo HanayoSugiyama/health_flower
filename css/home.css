@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+/*--------------------
+        共通設定
+---------------------*/
+*,
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kaisei Opti', serif;
+    background-image:url(../images/lace.50.jpg) ;
+    background-repeat: repeat;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* PC・SPのオンオフ */
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .pc {
+        display: none !important;
+    }
+
+    .sp {
+        display: block;
+    }
+}
+
+/*--------------
+     ヘッダー
+-------------- */
+header {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.header-wrapper {
+    max-width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-wrapper h1 {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper h1 a {
+    display: block;
+    color: #333333;
+    text-decoration: none;
+    font-size: 34px;
+}
+
+.header-wrapper h1 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.header-right {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    header {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        padding: 0;
+        background-color: #ffcccc;
+    }
+}
+
+/*--------------------
+       gnav部分
+---------------------*/
+.gnav {
+    width: 100%;
+    background-color: #ff9999;
+}
+
+.gnav-wrapper {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+}
+
+.gnav-wrapper li {
+    border-left: #ff6666 1px solid;
+    text-align: center;
+    width: calc(100%/5);
+    transition: all 0.3s ease;
+    list-style-type: none;
+}
+
+.gnav-wrapper li:last-child {
+    border-right: #ff6666 1px solid;
+}
+
+.gnav-wrapper li:hover {
+    background-color: #ff6666;
+}
+
+.gnav-wrapper li a {
+    display: block;
+    padding: 10px 0;
+    color: #333333;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .gnav-wrapper {
+        position: fixed;
+        display: table;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #eddbff;
+        visibility: hidden;
+        opacity: 0;
+        padding-top: 20%;
+    }
+
+    .gnav-wrapper li {
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        border-bottom: #824880 1px solid;
+        border-left: none;
+    }
+
+    .gnav-wrapper li:last-child {
+        border-right: none;
+    }
+
+    .menu-btn {
+        color: #333333;
+        cursor: pointer;
+        z-index: 100;
+        background-color: #333333;
+        max-width: 60px;
+        width: 60px;
+    }
+
+    .menu-btn i {
+        display: block;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .menu-btn span {
+        display: block;
+        padding: 0 0 10px 0;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .open {
+        transition: all .5s;
+        visibility: visible;
+        opacity: 1;
+        z-index: 10;
+    }
+
+    .menu-btn span::after {
+        content: attr(data-txt-menu);
+    }
+
+    .open span::after {
+        content: attr(data-txt-close);
+    }
+
+}
+
+.koujityuu {
+    margin: 60px;
+    color: red;
+    font-weight: bold;
+}
+
+/*メイン部分*/
+
+dl {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+dl dt {
+    width:20%;
+}
+dl dd {
+    width: 80%;
+    
+}
+
+/*-----------------------
+       フッター部分
+------------------------*/
+.access {
+    display: flex;
+  place-content: center;
+    margin: 30px auto;
+    max-width: 900px;
+   
+}
+.store {
+    width: 50%;
+}
+.map {
+    width: 50%;
+}
+.store h2 {
+    font-size: 24px;
+    color: #333333;
+    padding: 30px 0;
+
+    
+}
+dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+dt {
+    width: 40%;
+}
+dd {
+    width: 60%;
+}
+
+
+.go-top img {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 70px;
+    height: auto;
+}
+
+footer {
+    background-color: #ff9999;
+    padding: 10px 50px;
+    text-align: center;
+
+}
+.copyright {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+}
+
+@media (max-width:768px){
+
+    h1,h2 {
+            font-size: 18px;
+    }
+p {
+    font-size: 16px;
+}
+.access{
+    display: block;
+   
+}
+.store {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+   
+   
+}
+}
+
