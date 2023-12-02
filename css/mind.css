@@ -3,7 +3,7 @@
 
 *,
 ::after,
-::before{
+::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,38 +12,42 @@
 body {
     margin: 0;
     font-family: 'Kaisei Opti', serif;
-    background-image:url(../images/lace.50.jpg) ;
+    background-image: url(../images/lace.50.jpg);
     background-repeat: repeat;
 }
-img{
-    max-width: 100%; /*親要素からはみ出なくする設定*/
+
+img {
+    max-width: 100%;
+    /*親要素からはみ出なくする設定*/
     height: auto;
-    vertical-align: bottom; /*下の余白を除去する*/
-    }
+    vertical-align: bottom;
+    /*下の余白を除去する*/
+}
 
 .wrapper {
-   
+
     max-width: 1500px;
-    margin: 50px auto ;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 80px;
 }
-    @media (max-width: 480px) {
-        .wrapper {
-            display: block;
-            max-width: 400px;
-            margin: 30px;
-            
+
+@media (max-width: 480px) {
+    .wrapper {
+        display: block;
+        max-width: 400px;
+        margin: 30px;
+
         p {
-           font-size: 16px;
-           
+            font-size: 16px;
+
         }
     }
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -52,44 +56,41 @@ a{
 --------------------*/
 header {
     width: 100%;
-    padding: 10px 0;
+    margin: 0 auto;
     height: 90px;
     background-color: #ff7f7f;
     background-image: url(../images/simasima.jpg);
     background-repeat: repeat-x;
     background-blend-mode: soft-light;
-   
-header h1 {
-    display: block;
-    color: #eddbff;
-    text-decoration: none;
-    font-size: 34px;
-    margin: 0 auto;
 }
-}
+
 
 
 ul,
 ol {
     list-style-type: none;
 }
+
 .flex {
     display: flex;
 }
-.breadcrumb li:after{
+
+.breadcrumb li:after {
     content: '>';
     padding: 0 6px;
     color: #333333;
 }
+
 .breadcrumb li:last-child:after {
     content: '';
-  }
+}
 
 .bc__item {
     font-size: 16px;
     color: #333333;
     margin: 10px;
 }
+
 a:hover {
     opacity: 0.5;
 }
@@ -104,12 +105,15 @@ a:hover {
     margin-bottom: 32px;
     margin-top: 32px
 }
+
 @media (max-width: 480px) {
     #inymd {
         text-align: left;
+    }
 }
-}
-.postid-257 #inymd,.postid-237 #inymd {
+
+.postid-257 #inymd,
+.postid-237 #inymd {
     text-align: left
 }
 
@@ -119,7 +123,8 @@ dl.name-area {
     margin-bottom: 30px
 }
 
-dl.name-area dt,dl.name-area dd {
+dl.name-area dt,
+dl.name-area dd {
     display: inline-block;
     width: 27%;
     text-align: left
@@ -133,7 +138,9 @@ dl.name-area dd {
     margin: 0
 }
 
-#inymd select,#inymd input,#kabara1 input {
+#inymd select,
+#inymd input,
+#kabara1 input {
     font-size: 20px;
     vertical-align: top;
     outline: none;
@@ -174,8 +181,9 @@ dl.name-area dd {
     padding: 0 85px;
     color: #fff;
     border-bottom: solid 4px #ff7f7f;
-    margin: 30px 0 90px;    
+    margin: 30px 0 90px;
 }
+
 @media (max-width: 480px) {
     .st-2 {
         text-align: center;
@@ -189,11 +197,13 @@ dl.name-area dd {
 #inymd .st-2 button:active {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
-    box-shadow: 0px 0px 1px rgba(0,0,0,.2);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .2);
     border-bottom: none
 }
 
-input#d-no1,input#d-no2,input#d-no3 {
+input#d-no1,
+input#d-no2,
+input#d-no3 {
     text-align: center
 }
 
@@ -241,23 +251,26 @@ input#d-no1,input#d-no2,input#d-no3 {
     width: 6em
 }
 
-.question p{
+.question p {
     font-size: 24px;
     margin: 30px 0;
-    
+
     text-align: left;
 }
+
 @media (max-width: 480px) {
-    .st-2{
+    .st-2 {
         text-align: center;
     }
 }
+
 @media (max-width: 480px) {
-     #soulnumber1 .st-2{
+    #soulnumber1 .st-2 {
         text-align: center;
     }
 
 }
+
 /*-------------------------
    マインドナンバーリスト
 --------------------------*/
@@ -271,7 +284,7 @@ input#d-no1,input#d-no2,input#d-no3 {
 .number__list {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: 30px auto;
 }
 
@@ -280,11 +293,10 @@ input#d-no1,input#d-no2,input#d-no3 {
 }
 
 .number-img {
-    margin: 0  auto;
+    margin: 0 auto;
 }
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
 footer {
     background-color: #ff9999;
@@ -292,6 +304,7 @@ footer {
     text-align: center;
 
 }
+
 .copyright {
     font-size: 16px;
     font-weight: bold;
@@ -300,18 +313,23 @@ footer {
 
 /*モーダル*/
 
-.hide-area{
+.hide-area {
     display: none;
-  }
+}
 
-.modaal-close:after, 
-.modaal-close:before{
-  background:#ccc;  
+.modaal-close:after,
+.modaal-close:before {
+    background: #ccc;
 }
 
 .modaal-close:focus:after,
 .modaal-close:focus:before,
 .modaal-close:hover:after,
-.modaal-close:hover:before{
-  background:#666;
+.modaal-close:hover:before {
+    background: #666;
+}
+
+.top {
+    color: #fff;
+    margin: 0 auto;
 }
