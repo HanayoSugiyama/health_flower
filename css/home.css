@@ -45,6 +45,11 @@ body {
 header {
     width: 100%;
     padding: 10px 0;
+    height: 90px;
+    background-color: #ff7f7f;
+    background-image: url(../images/simasima.jpg);
+    background-repeat: repeat-x;
+    background-blend-mode: soft-light;
 }
 
 .header-wrapper {
@@ -58,12 +63,13 @@ header {
 .header-wrapper h1 {
     width: auto;
     display: flex;
-    align-items: center;
+    margin: 0 auto;
+   
 }
 
 .header-wrapper h1 a {
     display: block;
-    color: #333333;
+    color: #eddbff;
     text-decoration: none;
     font-size: 34px;
 }

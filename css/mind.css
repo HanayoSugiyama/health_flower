@@ -22,30 +22,52 @@ img{
     }
 
 .wrapper {
-    max-width: 900px;
-    margin: 0 auto;
+   
+    max-width: 1500px;
+    margin: 50px auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 80px;
 }
+    @media (max-width: 480px) {
+        .wrapper {
+            display: block;
+            max-width: 400px;
+            margin: 30px;
+            
+        p {
+           font-size: 16px;
+           
+        }
+    }
+}
+
 
 a{
     text-decoration: none;
-}
-
-@media (max-width: 360px) {
-    body {
-        font-size:12px
-    }
 }
 
 /*--------------------
   ヘッダー&パン部分
 --------------------*/
 header {
+    width: 100%;
+    padding: 10px 0;
     height: 90px;
     background-color: #ff7f7f;
     background-image: url(../images/simasima.jpg);
     background-repeat: repeat-x;
     background-blend-mode: soft-light;
+   
+header h1 {
+    display: block;
+    color: #eddbff;
+    text-decoration: none;
+    font-size: 34px;
+    margin: 0 auto;
 }
+}
+
 
 ul,
 ol {
@@ -82,7 +104,11 @@ a:hover {
     margin-bottom: 32px;
     margin-top: 32px
 }
-
+@media (max-width: 480px) {
+    #inymd {
+        text-align: left;
+}
+}
 .postid-257 #inymd,.postid-237 #inymd {
     text-align: left
 }
@@ -150,6 +176,11 @@ dl.name-area dd {
     border-bottom: solid 4px #ff7f7f;
     margin: 30px 0 90px;    
 }
+@media (max-width: 480px) {
+    .st-2 {
+        text-align: center;
+    }
+}
 
 #inymd .st-2 button:hover {
     background: #6fbbbc
@@ -195,13 +226,16 @@ input#d-no1,input#d-no2,input#d-no3 {
     outline: none
 }
 
+
+
 #form3 input#soul-no1 {
-    text-align: center
+    text-align: center;
 }
 
 #soulnumber1 dl.result-area dt {
     vertical-align: top
 }
+
 
 #form3 input#soul-no1 {
     width: 6em
@@ -209,27 +243,39 @@ input#d-no1,input#d-no2,input#d-no3 {
 
 .question p{
     font-size: 24px;
-    margin: 30px auto;
+    margin: 30px 0;
+    
+    text-align: left;
 }
+@media (max-width: 480px) {
+    .st-2{
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+     #soulnumber1 .st-2{
+        text-align: center;
+    }
 
+}
 /*-------------------------
    マインドナンバーリスト
 --------------------------*/
 .push {
     margin: 0 0 30px 0;
-    font-size: 18px;
+    font-size: 24px;
     color: #ff7f7f;
 
 }
 
-.mind-number-galley {
+.number__list {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3,1fr);
     margin: 30px auto;
 }
 
-.mind-number-galley img {
+.number__list img {
     object-fit: cover;
 }
 
@@ -237,7 +283,8 @@ input#d-no1,input#d-no2,input#d-no3 {
     margin: 0  auto;
 }
 
-
+@media (max-width: 480px) {
+}
 
 footer {
     background-color: #ff9999;
@@ -249,4 +296,22 @@ footer {
     font-size: 16px;
     font-weight: bold;
     color: #333333;
+}
+
+/*モーダル*/
+
+.hide-area{
+    display: none;
+  }
+
+.modaal-close:after, 
+.modaal-close:before{
+  background:#ccc;  
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+  background:#666;
 }
