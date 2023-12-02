@@ -44,8 +44,8 @@ body {
 -------------- */
 header {
     width: 100%;
-    padding: 10px 0;
-    height: 90px;
+    
+    height: auto;
     background-color: #ff7f7f;
     background-image: url(../images/simasima.jpg);
     background-repeat: repeat-x;
