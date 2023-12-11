@@ -208,20 +208,31 @@ header {
 }
 
 /*メイン部分*/
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.efficacy {
+    margin-top:2rem;
+}
 
-dl {
-    width: 900px;
+.main-text {
+    margin: 2rem 0;
+}
+.main-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 5rem;
+}
+
+.kohnoh {
     display: flex;
-    flex-wrap: wrap;
-}
-dl dt {
-    width:20%;
-}
-dl dd {
-    width: 80%;
-    
 }
 
+.kohnoh img {
+    padding: 0 1rem;
+}
 /*-----------------------
        フッター部分
 ------------------------*/
